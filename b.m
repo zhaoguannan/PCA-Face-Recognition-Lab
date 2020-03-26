@@ -6,6 +6,7 @@ end
 MeanFace = MeanFace/NumOfSamples;
 
 %compute the demeaned faces of the training samples
+DemeanFace = zeros(4608,20);
 for i = 1: NumOfSamples
     DemeanFace(:,i) = TrainingImage(:,i) - MeanFace;
 end
